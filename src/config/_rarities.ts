@@ -70,7 +70,7 @@ export const rarityConfig: IRarityType[] = [
             {chance: 4.2, label: "Beanie", previewUrl: "./assets/head-accessoires/beanie.jpg" },
             {chance: 4.2, label: "Heisenhat", previewUrl: "./assets/head-accessoires/heisenhat.jpg" },
             {chance: 4.2, label: "Doorag blue", previewUrl: "./assets/head-accessoires/doorag.jpg" },
-            {chance: 4.2, label: "Doorag red", previewUrl: "./assets/head-accessoires/32.png" },
+            {chance: 4.2, label: "Doorag red", previewUrl: "./assets/head-accessoires/32.jpg" },
             {chance: 4.2, label: "Cap forward red", previewUrl: "./assets/head-accessoires/cap forward.jpg" },
             {chance: 4.2, label: "Cap forward blue", previewUrl: "./assets/head-accessoires/51.jpg" },
             {chance: 4.2, label: "Cap backward red", previewUrl: "./assets/head-accessoires/cap backward.jpg" },
