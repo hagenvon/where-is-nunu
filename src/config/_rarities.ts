@@ -65,7 +65,7 @@ export const rarityConfig: IRarityType[] = [
     },
     {
         headline: "Head Accessoires",
-        subline: "The probabilities vary slightly from model to model. Overall, there is a 33% chance that a thug has a head accessory."
+        subline: "The probabilities vary slightly from model to model. Overall, there is a 33% chance that a thug has a head accessory.",
         items: [
             {chance: 4.2, label: "Beanie", previewUrl: "./assets/head-accessoires/beanie.jpg" },
             {chance: 4.2, label: "Heisenhat", previewUrl: "./assets/head-accessoires/heisenhat.jpg" },
