@@ -65,12 +65,16 @@ export const rarityConfig: IRarityType[] = [
     },
     {
         headline: "Head Accessoires",
+        subline: "The probabilities vary slightly from model to model. Overall, there is a 33% chance that a thug has a head accessory."
         items: [
-            {chance: 7.5, label: "Beanie", previewUrl: "./assets/head-accessoires/beanie.jpg" },
-            {chance: 7.5, label: "Heisenhat", previewUrl: "./assets/head-accessoires/heisenhat.jpg" },
-            {chance: 7.5, label: "Doorag", previewUrl: "./assets/head-accessoires/doorag.jpg" },
-            {chance: 7.5, label: "Cap Forward", previewUrl: "./assets/head-accessoires/cap forward.jpg" },
-            {chance: 7.5, label: "Cap Backward", previewUrl: "./assets/head-accessoires/cap backward.jpg" },
+            {chance: 4.2, label: "Beanie", previewUrl: "./assets/head-accessoires/beanie.jpg" },
+            {chance: 4.2, label: "Heisenhat", previewUrl: "./assets/head-accessoires/heisenhat.jpg" },
+            {chance: 4.2, label: "Doorag blue", previewUrl: "./assets/head-accessoires/doorag.jpg" },
+            {chance: 4.2, label: "Doorag red", previewUrl: "./assets/head-accessoires/32.png" },
+            {chance: 4.2, label: "Cap forward red", previewUrl: "./assets/head-accessoires/cap forward.jpg" },
+            {chance: 4.2, label: "Cap forward blue", previewUrl: "./assets/head-accessoires/51.jpg" },
+            {chance: 4.2, label: "Cap backward red", previewUrl: "./assets/head-accessoires/cap backward.jpg" },
+            {chance: 4.2, label: "Cap backward blue", previewUrl: "./assets/head-accessoires/7.jpg" },
         ]
     },
     {
