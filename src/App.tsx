@@ -91,8 +91,9 @@ function App() {
                 <img src={twitter} className="App-logo" alt="logo" />
               </a>
 
-
-              <img src={discord} className="App-logo" alt="logo" />
+              <a href={"https://discord.gg/Kv4PTfq3ep"}>
+                <img src={discord} className="App-logo" alt="logo" />
+              </a>
             </div>
           </div>
         </div>
