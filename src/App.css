@@ -26,6 +26,12 @@ body {
 .App-logo {
   pointer-events: none;
   max-width: 100%;
+  margin-top: 1rem
+}
+
+.App-section-header {
+  pointer-events: none;
+  max-width: 75%;
 }
 
 

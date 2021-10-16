@@ -35,7 +35,7 @@ function App() {
         </div>
 
 
-        <img src={modelsImg} className="App-logo" alt="logo" />
+        <img src={modelsImg} className="App-section-header" alt="logo" />
 
         <RarityType
             headline={modelConfig.headline}
@@ -44,7 +44,7 @@ function App() {
             key={modelConfig.headline}
         />
 
-        <img src={rarityImg} className="App-logo" alt="logo" />
+        <img src={rarityImg} className="App-section-header" alt="logo" />
 
         {rarityConfig.map(conf => {
           return (
@@ -63,11 +63,11 @@ function App() {
           <div>{favoriteRappers.join(", ")} ...and snoop</div>
         </div>
 
-        {/*<img src={aboutImg} className="App-logo" alt="logo" />*/}
+        {/*<img src={aboutImg} className="App-section-header" alt="logo" />*/}
         {/*<div>Birdz... that are thugs and infamous.</div>*/}
 
         <div className={"section"}>
-            <div><img src={faqImg} className="App-logo" alt="logo" /></div>
+            <div><img src={faqImg} className="App-section-header" alt="logo" /></div>
 
           {faqs.map(({question, answer})=> {
             return <div key={question}>
@@ -84,11 +84,11 @@ function App() {
           <div className={"row"}>
             <div className={"col-12"}>
               <a href="https://twitter.com/infamousBirdz">
-                <img src={twitter} className="App-logo" alt="logo" />
+                <img src={twitter} className="App-section-header" alt="logo" />
               </a>
 
               <a href={"https://discord.gg/Kv4PTfq3ep"}>
-                <img src={discord} className="App-logo" alt="logo" />
+                <img src={discord} className="App-section-header" alt="logo" />
               </a>
             </div>
           </div>
