@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./images/logo.jpg";
+import logo from "./images/logo2.jpg";
 import rarityImg from "./images/rarity.gif";
 // import aboutImg from "./images/about.gif";
 // import roadmapImg from "./images/roadmap.gif";
@@ -23,10 +23,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="App-header-top">
-          <img src={thugMe} className="App-thug-me-icon" alt="logo" />
-          thug #2658 presents
-        </div>
 
         <img src={logo} className="App-logo" alt="logo" />
       </header>
@@ -74,7 +70,7 @@ function App() {
             <div><img src={faqImg} className="App-logo" alt="logo" /></div>
 
           {faqs.map(({question, answer})=> {
-            return <div>
+            return <div key={question}>
               <Question value={question}></Question>
               <Answer value={answer}></Answer>
             </div>
