@@ -8,11 +8,11 @@ export const faqs: FaqModel[] = [
     },
     {
         question: "How much?",
-        answer: `tdd`
+        answer: `tbd`
     },
     {
         question: "Wen mint?",
-        answer: `tbd`
+        answer: `Mid/late October 2021`
     },
     {
         question: "What's in it for the thugDAO?",
