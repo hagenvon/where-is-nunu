@@ -14,7 +14,7 @@ export const RarityItem = ({
 
   return (
     <div className="rarity-item-wrapper">
-      <img src={previewUrl} alt="" />
+      <img src={previewUrl} alt="" className="img-fluid" />
       <div className={"rarity-item-label"}>{label}</div>
         {amount && <div className={"rarity-item-chance-label"}>{`${amount} Bird${amount > 1 ? 'z': ''}`}</div>}
         {isZeroChance && <div>0.0%</div>}
