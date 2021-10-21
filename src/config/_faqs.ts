@@ -8,15 +8,15 @@ export const faqs: FaqModel[] = [
     },
     {
         question: "How much?",
-        answer: `tbd`
+        answer: `${PRICE} SOL`
     },
     {
         question: "Wen mint?",
-        answer: `Mid/late October 2021`
+        answer: `Now!`
     },
     {
         question: "What's in it for the thugDAO?",
-        answer: "25% of the collection will be airdropped to members of the thugDAO. 20% of all royalities."
+        answer: "25% of the collection will be airdropped to thugbirdz holder. 20% of all royalities."
     },
     {
         question: "Distribution?",
