@@ -21,6 +21,7 @@ export const RarityType = (props: IRarityType) => {
               label={item.label}
               chance={item.chance}
               amount={item.amount}
+              subtext={item.subtext}
             />
           </div>
         );

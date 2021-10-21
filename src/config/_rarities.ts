@@ -83,7 +83,7 @@ export const rarityConfig: IRarityType[] = [
             {chance: 33.333, label: "Ferrari", previewUrl: "./assets/facial-expression/expression.jpg" },
             {chance: 33.333, label: "Le Tigre", previewUrl: "./assets/facial-expression/expression.jpg" },
             {chance: 33.334, label: "Blue Steel", previewUrl: "./assets/facial-expression/expression.jpg" },
-            {chance: 0, label: "Magnum", previewUrl: "./assets/facial-expression/expression.jpg" },
+            {chance: 0, label: "Magnum", previewUrl: "./assets/facial-expression/magnum.jpg", subtext: "Probably way too early to even talk about" },
         ]
     },
     {

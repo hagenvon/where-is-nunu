@@ -5,7 +5,8 @@ export const RarityItem = ({
   previewUrl,
   label,
   chance,
-  amount
+  amount,
+    subtext
 }: IRarityItem) => {
 
     const showChance = chance && chance > 0;
@@ -18,6 +19,8 @@ export const RarityItem = ({
       <div className={"rarity-item-label"}>{label}</div>
         {amount && <div className={"rarity-item-chance-label"}>{`${amount} Bird${amount > 1 ? 'z': ''}`}</div>}
         {isZeroChance && <div>0.0%</div>}
+        {subtext && <div>{subtext}</div>}
+
       {!isZeroChance && showChance && (
         <div>
           <div className={"rarity-item-chance-label"}>{`${chance}%`}</div>

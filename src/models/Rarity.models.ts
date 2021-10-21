@@ -10,4 +10,5 @@ export interface IRarityItem {
     amount?: number;
     infotext?: string;
     previewUrl: string;
+    subtext?: string;
 }
