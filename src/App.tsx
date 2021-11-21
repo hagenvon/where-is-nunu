@@ -142,7 +142,7 @@ const App = () => {
                               In a radical move, Charlie and Bubo decide to launch themselves as a NFT collection to find Nunu.
                           </div>
                           <div className={"interlude-section"}>
-                              "Let's ask Mr.Thuggles, maybe he knows something" suggests Bubo.
+                              "Let's ask Mr.Thuggles, maybe he knows something" suggests Bubo...
                           </div>
                           {/*<div className={"interlude-section"}>*/}
                           {/*    Join Charlie and Bubo on their quest to find Nunu. Stay curious and make $FRENS along the way.*/}
@@ -152,7 +152,16 @@ const App = () => {
                   </div>
               </div>
 
+              <div>
+                  <img src={charlie} className="App-section-header" alt="logo" />
 
+                  <RarityType
+                      headline={charlieConfig.headline}
+                      subline={charlieConfig.subline}
+                      items={charlieConfig.items}
+                      key={charlieConfig.headline}
+                  />
+              </div>
 
               <div>
                   <img src={bubo} className="App-section-header" alt="logo" />
@@ -164,16 +173,7 @@ const App = () => {
                       key={buboConfig.headline}
                   />
               </div>
-              <div>
-              <img src={charlie} className="App-section-header" alt="logo" />
 
-              <RarityType
-                  headline={charlieConfig.headline}
-                  subline={charlieConfig.subline}
-                  items={charlieConfig.items}
-                  key={charlieConfig.headline}
-              />
-              </div>
 
               <div>
               <img src={roadmap} className="App-section-header mb-3" alt="logo" />
