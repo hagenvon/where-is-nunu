@@ -15,7 +15,7 @@ export const RarityType = (props: IRarityType) => {
       </div>
       {items.map((item, index) => {
         return (
-          <div className={" col-md-3 col-6"} key={index}>
+          <div className={" col-md-4 col-4"} key={index}>
             <RarityItem
               previewUrl={item.previewUrl}
               label={item.label}

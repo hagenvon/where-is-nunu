@@ -5,14 +5,21 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
+
+/*#ACECEC*/
+
+/*#63CECE*/
+
+
 .App {
   text-align: center;
 }
 
-.App-header-top {
-  display: flex;
-  flex-direction: column;
+.header {
   align-items: center;
+  width: 100%;
+  background-image: linear-gradient(0deg, #ACECEC 0%, #63CECE 100%);
+  margin-bottom: 2rem;
 }
 
 .App-thug-me-icon {
@@ -26,7 +33,6 @@ body {
 .App-logo {
   pointer-events: none;
   max-width: 100%;
-  margin-top: 1rem
 }
 
 .App-section-header {
@@ -49,10 +55,29 @@ body {
 
 .footer {
 
-  background-color: lightpink;
+  background-color: #63CECE;
   padding: 0.75rem 0;
 }
 
 .sc-dlfnuX {
   margin-bottom: 2.5rem;
+}
+
+.interlude {
+  max-width: 800px;
+  text-align: left;
+  background-color: #5F9EA0;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.interlude-headline {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.interlude-section {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
 }

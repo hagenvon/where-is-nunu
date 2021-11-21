@@ -22,15 +22,19 @@ import {
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import logo from "./images/logo2.jpg";
-import rarityImg from "./images/rarity.gif";
 import twitter from "./images/twitter.svg";
 import discord from "./images/discord.svg";
-import modelsImg from "./images/models.gif";
-import faqImg from "./images/faq.gif";
+import charlie from "./images/charlie.jpg";
+import bubo from "./images/bubo.jpg";
+import roadmap from "./images/roadmap.jpg";
+import reward from "./images/reward.jpg";
+import breed from "./images/breed.jpg";
+import separator from "./images/separator.jpg";
+import faqImg from "./images/faq.jpg";
 import "./App.css";
 
 import { RarityType } from "./components/rarity/RarityType";
-import {favoriteRappers, modelConfig, rarityConfig} from "./config/_rarities";
+import {favoriteRappers, charlieConfig, rarityConfig, buboConfig} from "./config/_rarities";
 import { Headline } from "./components/Headline";
 import { SubHeadline } from "./components/SubHeadline";
 import {Question} from "./components/Question";
@@ -102,63 +106,122 @@ const App = () => {
   return (
 
       <div className="App">
-          <header className="App-header">
 
-              <img src={logo} className="App-logo" alt="logo" />
-          </header>
+          <img src={logo} className="App-logo" alt="logo" />
 
-          <ThemeProvider theme={theme}>
-              <ConnectionProvider endpoint={endpoint}>
-                  <WalletProvider wallets={wallets} autoConnect={true}>
-                      <WalletDialogProvider>
-                          <Home
-                              candyMachineId={candyMachineId}
-                              config={config}
-                              connection={connection}
-                              startDate={startDateSeed}
-                              treasury={treasury}
-                              txTimeout={txTimeout}
-                          />
-                      </WalletDialogProvider>
-                  </WalletProvider>
-              </ConnectionProvider>
-          </ThemeProvider>
+          {/*<ThemeProvider theme={theme}>*/}
+          {/*    <ConnectionProvider endpoint={endpoint}>*/}
+          {/*        <WalletProvider wallets={wallets} autoConnect={true}>*/}
+          {/*            <WalletDialogProvider>*/}
+          {/*                <Home*/}
+          {/*                    candyMachineId={candyMachineId}*/}
+          {/*                    config={config}*/}
+          {/*                    connection={connection}*/}
+          {/*                    startDate={startDateSeed}*/}
+          {/*                    treasury={treasury}*/}
+          {/*                    txTimeout={txTimeout}*/}
+          {/*                />*/}
+          {/*            </WalletDialogProvider>*/}
+          {/*        </WalletProvider>*/}
+          {/*    </ConnectionProvider>*/}
+          {/*</ThemeProvider>*/}
 
           <div className="container">
-              <div className={"section"}>
-                  A collection of {THUGS_PER_MODEL * AMOUNT_MODELS} uniquely generated, tough and infamous birdz,
-                  derived from the{" "}
-                  <a href={"https://www.thugbirdz.com"}>OG Thugbirdz collection.</a>
+
+              <div className={"row justify-content-center"}>
+                  <div className={"col-md-8"}>
+                      <div className={"interlude"}>
+
+                          <div className={"interlude-headline"}>
+                              Nunu has the ultimate idea for the best NFT collection in the world.
+                          </div>
+                          <div className={"interlude-section"}>
+                              He found the one true utility that changes everything. The missing piece. "They're going to have to cancel the metaverse. We are going to the mooooon!" were the last words, before Nunu disappeared.
+                          </div>
+                          <div className={"interlude-section"}>
+                              In a radical move, Charlie and Bubo decide to launch themselves as a NFT collection to find Nunu.
+                          </div>
+                          <div className={"interlude-section"}>
+                              "Let's ask Mr.Thuggles, maybe he knows something" suggests Bubo.
+                          </div>
+                          {/*<div className={"interlude-section"}>*/}
+                          {/*    Join Charlie and Bubo on their quest to find Nunu. Stay curious and make $FRENS along the way.*/}
+                          {/*</div>*/}
+
+                      </div>
+                  </div>
               </div>
 
 
-              <img src={modelsImg} className="App-section-header" alt="logo" />
+
+              <div>
+                  <img src={bubo} className="App-section-header" alt="logo" />
+
+                  <RarityType
+                      headline={buboConfig.headline}
+                      subline={buboConfig.subline}
+                      items={buboConfig.items}
+                      key={buboConfig.headline}
+                  />
+              </div>
+              <div>
+              <img src={charlie} className="App-section-header" alt="logo" />
 
               <RarityType
-                  headline={modelConfig.headline}
-                  subline={modelConfig.subline}
-                  items={modelConfig.items}
-                  key={modelConfig.headline}
+                  headline={charlieConfig.headline}
+                  subline={charlieConfig.subline}
+                  items={charlieConfig.items}
+                  key={charlieConfig.headline}
               />
-
-              <img src={rarityImg} className="App-section-header" alt="logo" />
-
-              {rarityConfig.map(conf => {
-                  return (
-                      <RarityType
-                          headline={conf.headline}
-                          subline={conf.subline}
-                          items={conf.items}
-                          key={conf.headline}
-                      />
-                  );
-              })}
-
-              <div className={"section"}>
-                  <Headline headline={"Favorite Rappers"} />
-                  <SubHeadline value={"(All Rappers are equally rare)"} />
-                  <div>{favoriteRappers.join(", ")} ...and snoop</div>
               </div>
+
+              <div>
+              <img src={roadmap} className="App-section-header mb-3" alt="logo" />
+
+
+
+              <div className={"headline"}>Phase 1 - Mint</div>
+              <p>Mint collection</p>
+
+              <div>
+                  <img src={separator} className="App-section-header mb-4" alt="logo" />
+              </div>
+
+
+              <div className={"headline"}>Phase 2 - Reward</div>
+              <p>Reward holders with $FRENS</p>
+              <img src={reward} className="App-section-header" alt="logo" />
+
+            <div>
+                <img src={separator} className="App-section-header mb-3" alt="logo" />
+            </div>
+
+
+              <div className={"headline"}>Phase 3 - Breed</div>
+              <p>Release special collections exclusively available for $FRENS</p>
+              <img src={breed} className="App-section-header" alt="logo" />
+
+
+              </div>
+
+              {/*<img src={rarityImg} className="App-section-header" alt="logo" />*/}
+
+              {/*{rarityConfig.map(conf => {*/}
+              {/*    return (*/}
+              {/*        <RarityType*/}
+              {/*            headline={conf.headline}*/}
+              {/*            subline={conf.subline}*/}
+              {/*            items={conf.items}*/}
+              {/*            key={conf.headline}*/}
+              {/*        />*/}
+              {/*    );*/}
+              {/*})}*/}
+
+              {/*<div className={"section"}>*/}
+              {/*    <Headline headline={"Favorite Rappers"} />*/}
+              {/*    <SubHeadline value={"(All Rappers are equally rare)"} />*/}
+              {/*    <div>{favoriteRappers.join(", ")} ...and snoop</div>*/}
+              {/*</div>*/}
 
               {/*<img src={aboutImg} className="App-section-header" alt="logo" />*/}
               {/*<div>Birdz... that are thugs and infamous.</div>*/}
@@ -180,11 +243,11 @@ const App = () => {
               <div className={"container"}>
                   <div className={"row"}>
                       <div className={"col-12"}>
-                          <a href="https://twitter.com/infamousBirdz">
+                          <a href="https://twitter.com/where_is_nunu">
                               <img src={twitter} className="App-section-header" alt="logo" />
                           </a>
 
-                          <a href={"https://discord.gg/Kv4PTfq3ep"}>
+                          <a href={"https://discord.gg/Hewj6Beatf"}>
                               <img src={discord} className="App-section-header" alt="logo" />
                           </a>
                       </div>

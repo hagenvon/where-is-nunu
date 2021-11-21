@@ -1,16 +1,25 @@
 import {IRarityType} from "../models/Rarity.models";
 import {THUGS_PER_MODEL} from "./__numbers";
 
-export const modelConfig: IRarityType = {
+export const charlieConfig: IRarityType = {
         headline: "",
-        subline: "Each model comes with two different 'hairstyles' and two different beaks. Each model has at least one exclusive trait.",
+        subline: "Charlie is an artist. He likes Bananas.",
         items: [
-            {amount: THUGS_PER_MODEL, label: "Dr. Fud", previewUrl: "./assets/models/round 2.jpg" },
-            {amount: THUGS_PER_MODEL, label: "Paperhamz", previewUrl: "./assets/models/round 3.jpg" },
-            {amount: THUGS_PER_MODEL, label: "Lil' Rugster", previewUrl: "./assets/models/round 4.jpg" },
-            {amount: THUGS_PER_MODEL, label: "2Caws", previewUrl: "./assets/models/round 5.jpg" }
+            {chance: 80, label: "Normal", previewUrl: "./assets/models/103.png" },
+            {chance: 10, label: "Zombie", previewUrl: "./assets/models/221.png" },
+            {chance: 10, label: "Alien", previewUrl: "./assets/models/193.png" }
         ]
     }
+
+export const buboConfig: IRarityType = {
+    headline: "",
+    subline: "Bubo is an amazing developer. She likes Coconuts",
+    items: [
+        {chance: 80, label: "Normal", previewUrl: "./assets/models/102.png" },
+        {chance: 10, label: "Zombie", previewUrl: "./assets/models/118.png" },
+        {chance: 10, label: "Alien", previewUrl: "./assets/models/111.png" }
+    ]
+}
 
 export const rarityConfig: IRarityType[] = [
 

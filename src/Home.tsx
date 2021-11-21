@@ -18,6 +18,7 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
+import {PRICE} from "./config/__numbers";
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -171,9 +172,9 @@ const Home = (props: HomeProps) => {
         <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL | Mint: 0.345 SOL</p>}
+      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL | Mint: {PRICE} SOL</p>}
 
-      {wallet && <p>Infamous Thugs Available: {itemsRemaining}/{itemsAvailable}</p>}
+      {wallet && <p>Charlies and Bubos available: {itemsRemaining}/{itemsAvailable}</p>}
 
       {/*{wallet && <p>Redeemed: {itemsRedeemed}</p>}*/}
 

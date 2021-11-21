@@ -3,8 +3,8 @@ import {AMOUNT_MODELS, MINT_DATE, PRICE, THUGS_PER_MODEL} from "./__numbers";
 
 export const faqs: FaqModel[] = [
     {
-        question: "How many thugs?",
-        answer: `There will be ${AMOUNT_MODELS} models, each with a supply of ${THUGS_PER_MODEL}, which makes a total of ${AMOUNT_MODELS * THUGS_PER_MODEL} infamous thugs`
+        question: "How many?",
+        answer: `800 Charlies and 400 Bubos (girls are rare), which makes a total supply of 1.200.`
     },
     {
         question: "How much?",
@@ -12,22 +12,34 @@ export const faqs: FaqModel[] = [
     },
     {
         question: "Wen mint?",
-        answer: `Now!`
-    },
-    {
-        question: "What's in it for the thugDAO?",
-        answer: "25% of the collection will be airdropped to thugbirdz holder. 20% of all royalities."
+        answer: `starts 22.11.2021, ends 30.11.2021`
     },
     {
         question: "Distribution?",
-        answer: "25% gets airdropped to members of the thugDAO. Artist will keep max. 15 thugs to share with his (normie) frens and familiy"
+        answer: "150 get airdropped to holders of Infamous Thugbirdz. Every unminted item will be airdropped to the community, mostly to Infamous Thugbirdz and OG Thugbirdz holders."
     },
     {
-        question: "Utility, innovation or even a roadmap?",
-        answer: "It's a small artist's project. There is no utility or innovation, just art. Please keep this in mind when you want to mint/buy."
+        question: "Roadmap?",
+        answer: "Holders will start making $FRENS very soon. $FRENS can turn into exclusive companions."
     },
     {
-        question: "Will I be considered cool if I buy an infamous thug?",
-        answer: "You're damn right you will"
+        question: "Wait a minute. What do mean by 'can turn into exclusive companions'?",
+        answer: "There will be new collections exclusively available to $FRENS."
+    },
+    {
+        question: "Whuuuat? So, that's basically breeding. You doing Cyberkongz?",
+        answer: "Yeah, basically, but instead of babies, there will be various special collections."
+    },
+    {
+        question: "Uh, that's dope",
+        answer: ":)"
+    },
+    {
+        question: "Any sneak preview of the collections to come?",
+        answer: "The first collection could be 'Mr.Thuggles', a sneak preview will be revealed very soon."
+    },
+    {
+        question: "Ok, so, where is Nunu?",
+        answer: "Let's find out."
     }
 ]
