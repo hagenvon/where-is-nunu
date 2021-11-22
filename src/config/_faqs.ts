@@ -4,7 +4,7 @@ import {AMOUNT_MODELS, MINT_DATE, PRICE, THUGS_PER_MODEL} from "./__numbers";
 export const faqs: FaqModel[] = [
     {
         question: "How many?",
-        answer: `66% Charlies and 33% Bubos (girls are rare), with a total supply of 999.`
+        answer: `66% Charlies and 33% Bubos (girls are rare)`
     },
     {
         question: "How much?",
