@@ -4,7 +4,7 @@ import {AMOUNT_MODELS, MINT_DATE, PRICE, THUGS_PER_MODEL} from "./__numbers";
 export const faqs: FaqModel[] = [
     {
         question: "How many?",
-        answer: `800 Charlies and 400 Bubos (girls are rare), which makes a total supply of 1.200.`
+        answer: `666 Charlies and 333 Bubos (girls are rare), which makes a total supply of 999.`
     },
     {
         question: "How much?",
