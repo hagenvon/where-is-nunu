@@ -41,6 +41,9 @@ import {Question} from "./components/Question";
 import {faqs} from "./config/_faqs";
 import {Answer} from "./components/Answer";
 import {AMOUNT_MODELS, THUGS_PER_MODEL} from "./config/__numbers";
+import {TraitType} from "./components/traits/TraitType";
+import {traitsClothes} from "./config/_traitsClothes";
+import {traitsHats} from "./config/_traitsHats";
 
 
 const treasury = new anchor.web3.PublicKey(
@@ -205,6 +208,10 @@ const App = () => {
               </div>
 
               {/*<img src={rarityImg} className="App-section-header" alt="logo" />*/}
+
+              <TraitType headline={"Head Accessoires"} folder={"./assets/traits/hats"} items={traitsHats} />
+
+              <TraitType headline={"Clothes"} folder={"./assets/traits/clothes"} items={traitsClothes} />
 
               {/*{rarityConfig.map(conf => {*/}
               {/*    return (*/}

@@ -1,0 +1,14 @@
+.rarity-item-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.trait-item-label {
+    font-weight: 400;
+    font-size: 85%;
+
+}
+
+.progress-bar {
+    background-color: darkcyan;
+}
