@@ -30,6 +30,7 @@ import roadmap from "./images/roadmap.jpg";
 import reward from "./images/reward.jpg";
 import breed from "./images/breed.jpg";
 import separator from "./images/separator.jpg";
+import rarity from "./images/rarity.gif";
 import faqImg from "./images/faq.jpg";
 import "./App.css";
 
@@ -207,7 +208,7 @@ const App = () => {
 
               </div>
 
-              {/*<img src={rarityImg} className="App-section-header" alt="logo" />*/}
+              <img src={rarity} className="App-section-header" alt="logo" />
 
               <TraitType headline={"Head Accessoires"} folder={"./assets/traits/hats"} items={traitsHats} />
 
