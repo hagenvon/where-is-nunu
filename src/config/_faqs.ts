@@ -12,11 +12,11 @@ export const faqs: FaqModel[] = [
     },
     {
         question: "Wen mint?",
-        answer: `starts 22.11.2021, ends 30.11.2021`
+        answer: `23.11.2021`
     },
     {
         question: "Distribution?",
-        answer: "150 get airdropped to holders of Infamous Thugbirdz. Every unminted item will be airdropped to the community, mostly to Infamous Thugbirdz and OG Thugbirdz holders."
+        answer: "150 get airdropped to holders of Infamous Thugbirdz."
     },
     {
         question: "Roadmap?",

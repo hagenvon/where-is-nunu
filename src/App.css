@@ -32,7 +32,8 @@ body {
 
 .App-logo {
   pointer-events: none;
-  max-width: 100%;
+  max-width: 800px;
+  width: 100%
 }
 
 .App-section-header {
@@ -64,17 +65,15 @@ body {
 }
 
 .interlude {
-  max-width: 800px;
-  text-align: left;
-  background-color: #5F9EA0;
-  color: white;
+  max-width: 900px;
   padding: 2rem;
   margin-bottom: 2rem;
 }
 
 .interlude-headline {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  color: #5F9EA0;
+  margin-bottom: 1rem;
 }
 
 .interlude-section {

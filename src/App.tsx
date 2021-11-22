@@ -45,6 +45,8 @@ import {AMOUNT_MODELS, THUGS_PER_MODEL} from "./config/__numbers";
 import {TraitType} from "./components/traits/TraitType";
 import {traitsClothes} from "./config/_traitsClothes";
 import {traitsHats} from "./config/_traitsHats";
+import {traitsEyeWear, traitsMouthWear} from "./config/_traitsMouthWear";
+import {traitsFaces} from "./config/_faces";
 
 
 const treasury = new anchor.web3.PublicKey(
@@ -140,7 +142,7 @@ const App = () => {
                               Nunu has the ultimate idea for the best NFT collection in the world.
                           </div>
                           <div className={"interlude-section"}>
-                              He found the one true utility that changes everything. The missing piece. "They're going to have to cancel the metaverse. We are going to the mooooon!" were the last words, before Nunu disappeared.
+                              He found the one true utility that changes everything. THE missing piece. They're going to have to cancel the metaverse. Too bad Nunu disappeared. Without a trace.
                           </div>
                           <div className={"interlude-section"}>
                               In a radical move, Charlie and Bubo decide to launch themselves as a NFT collection to find Nunu.
@@ -210,9 +212,18 @@ const App = () => {
 
               <img src={rarity} className="App-section-header" alt="logo" />
 
+              <div className={"section"}>
+                  Over 120 unique traits. Some of them are a surprise.
+              </div>
+
               <TraitType headline={"Head Accessoires"} folder={"./assets/traits/hats"} items={traitsHats} />
 
               <TraitType headline={"Clothes"} folder={"./assets/traits/clothes"} items={traitsClothes} />
+
+              <TraitType headline={"Mouth & Eye Wear"} folder={"./assets/traits/mouth wear"} items={[...traitsMouthWear, ...traitsEyeWear]} />
+
+              <TraitType headline={"Facial Expressions"} subline={"Randomly generated unique facial expressions (from at least 6 different mouthes and 12 eyes variations)"} folder={"./assets/facial-expression"} items={traitsFaces} withoutLabels={true} />
+
 
               {/*{rarityConfig.map(conf => {*/}
               {/*    return (*/}
@@ -234,7 +245,7 @@ const App = () => {
               {/*<img src={aboutImg} className="App-section-header" alt="logo" />*/}
               {/*<div>Birdz... that are thugs and infamous.</div>*/}
 
-              <div className={"section"}>
+              <div className={"section mt-5"}>
                   <div><img src={faqImg} className="App-section-header" alt="logo" /></div>
 
                   {faqs.map(({question, answer})=> {

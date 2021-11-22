@@ -3,12 +3,14 @@ export interface ITraitType {
     subline?: string;
     folder: string;
     items: string[]
+    withoutLabels?: boolean;
 }
 
 export interface ITraitItem {
     label: string;
     fileName: string;
     rarity: number;
+    withoutLabels?: boolean
 }
 
 

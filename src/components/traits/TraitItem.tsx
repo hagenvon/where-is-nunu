@@ -5,11 +5,11 @@ import {RarityLabel} from "./RarityLabel";
 export const TraitItem = ({
   fileName,
   label,
-    rarity
+    rarity,
+    withoutLabels
 }: ITraitItem) => {
 
 
-    console.log("folder", fileName)
   return (
     <div className="trait-item-wrapper">
 
@@ -17,7 +17,11 @@ export const TraitItem = ({
 
             <img src={fileName} alt="" className="img-fluid" />
         </div>
-        <div className={"trait-item-label"}>            <RarityLabel rarity={rarity} /> {label}
+        <div className={"trait-item-label"}>
+            {!withoutLabels && <>
+                <RarityLabel rarity={rarity} /> {label}
+            </>}
+
 
 
         </div>
