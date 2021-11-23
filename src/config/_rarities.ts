@@ -21,6 +21,23 @@ export const buboConfig: IRarityType = {
     ]
 }
 
+export const examplesConfig: IRarityType = {
+    headline: "Examples",
+    subline: "The common type comes with 7 different fur colors.",
+    items: [
+        {chance: -1, label: "", previewUrl: "./assets/types/137.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/151.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/162.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/249.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/257.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/258.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/287.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/296.png" },
+        {chance: -1, label: "", previewUrl: "./assets/types/298.png" }
+    ]
+}
+
+
 export const rarityConfig: IRarityType[] = [
 
     {

@@ -35,7 +35,7 @@ import faqImg from "./images/faq.jpg";
 import "./App.css";
 
 import { RarityType } from "./components/rarity/RarityType";
-import {favoriteRappers, charlieConfig, rarityConfig, buboConfig} from "./config/_rarities";
+import {favoriteRappers, charlieConfig, rarityConfig, buboConfig, examplesConfig} from "./config/_rarities";
 import { Headline } from "./components/Headline";
 import { SubHeadline } from "./components/SubHeadline";
 import {Question} from "./components/Question";
@@ -180,6 +180,12 @@ const App = () => {
                   />
               </div>
 
+              <RarityType
+                  headline={examplesConfig.headline}
+                  subline={examplesConfig.subline}
+                  items={examplesConfig.items}
+                  key={examplesConfig.headline}
+              />
 
               <div>
               <img src={roadmap} className="App-section-header mb-3" alt="logo" />
