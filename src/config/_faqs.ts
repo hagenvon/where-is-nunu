@@ -12,7 +12,7 @@ export const faqs: FaqModel[] = [
     },
     {
         question: "Wen mint?",
-        answer: `23.11.2021`
+        answer: `End of November 2021`
     },
     {
         question: "Distribution?",
