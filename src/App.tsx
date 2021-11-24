@@ -209,11 +209,12 @@ const App = () => {
             </div>
 
 
-              <div className={"headline"}>Phase 3 - Breed</div>
-              <p>Release special collections exclusively available for $FRENS</p>
+              <div className={"headline"}>Phase 3 - Mr.Thuggles</div>
+              <p>Release special "Mr.Thuggles" collection exclusively available for $FRENS</p>
               <img src={breed} className="App-section-header" alt="logo" />
 
-
+              <div className={"headline"}>Phase 4 - Specials</div>
+              <p className={"mb-5"}>Release more specials and/or collections exclusively available for $FRENS</p>
               </div>
 
               <img src={rarity} className="App-section-header" alt="logo" />
