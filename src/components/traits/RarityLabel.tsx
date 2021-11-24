@@ -12,26 +12,26 @@ export const RarityLabel = ({
 
 
 const getRarityLabel = (rarity: number): string => {
-    if (rarity < 4) {
-        return "epic"
+    if (rarity < 3) {
+        return "legendary"
     }
-    if (rarity > 7) {
+    if (rarity > 5) {
         return "rare"
     }
 
-    return "super rare"
+    return "epic"
 }
 
 const getBackgroundColor = (rarity: number)=> {
     const rar = getRarityLabel(rarity);
 
     if (rar === "rare") {
-        return "#82beed"
-    }
-
-    if (rar === "super rare") {
         return "#3f82b7"
     }
 
-    return "#274b70"
+    if (rar === "epic") {
+        return "#8b3fb7"
+    }
+
+    return "#f36821"
 }
