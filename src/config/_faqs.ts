@@ -8,7 +8,7 @@ export const faqs: FaqModel[] = [
     },
     {
         question: "How much?",
-        answer: `${PRICE} SOL (we are people of culture and style)`
+        answer: `${PRICE} SOL`
     },
     {
         question: "Wen mint?",
