@@ -189,7 +189,7 @@ const Home = (props: HomeProps) => {
             left: "-42px",
       }}/></div> </div>}
 
-      {isMinting && wallet && <p>Charlies and Bubos available: {itemsRemaining}/{itemsAvailable}</p>}
+      {wallet && <p>Charlies and Bubos available: {itemsRemaining}/{itemsAvailable}</p>}
 
       {/*{wallet && <p>Redeemed: {itemsRedeemed}</p>}*/}
 
