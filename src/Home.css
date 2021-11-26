@@ -1,0 +1,10 @@
+.mint-price {
+    position: relative;
+    display: inline-block;
+}
+.new-mint-price {
+    position: absolute;
+    top: -26px;
+    width: 101px;
+    left: -42px;
+}

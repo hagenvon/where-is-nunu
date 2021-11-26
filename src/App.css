@@ -18,8 +18,14 @@ body {
 .header {
   align-items: center;
   width: 100%;
-  background-image: linear-gradient(0deg, #ACECEC 0%, #63CECE 100%);
-  margin-bottom: 2rem;
+  /*background-image: linear-gradient(0deg, #ACECEC 0%, #63CECE 100%);*/
+  background-color: #ACECEC;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.header-section {
+  color: black;
 }
 
 .App-thug-me-icon {
@@ -72,7 +78,7 @@ body {
 
 .interlude-headline {
   font-size: 1.8rem;
-  color: #5F9EA0;
+  color: #4ba4e5;
   margin-bottom: 1rem;
 }
 
@@ -80,3 +86,4 @@ body {
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
 }
+

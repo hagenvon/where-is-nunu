@@ -24,6 +24,8 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 import logo from "./images/logo2.jpg";
 import twitter from "./images/twitter.svg";
 import discord from "./images/discord.svg";
+import twitterBlue from "./images/twitter-blue.svg";
+import discordBlue from "./images/discord-blue.svg";
 import charlie from "./images/charlie.jpg";
 import bubo from "./images/bubo.jpg";
 import roadmap from "./images/roadmap.jpg";
@@ -32,6 +34,11 @@ import breed from "./images/breed.jpg";
 import separator from "./images/separator.jpg";
 import rarity from "./images/rarity.gif";
 import faqImg from "./images/faq.jpg";
+import itb from "./images/itb.png";
+import itb2 from "./images/itb2.png";
+import itb3 from "./images/itb3.png";
+import itb4 from "./images/itb4.png";
+import itb5 from "./images/itb5.png";
 import "./App.css";
 
 import { RarityType } from "./components/rarity/RarityType";
@@ -113,24 +120,37 @@ const App = () => {
 
       <div className="App">
 
+          <div className={"header"}>
+              <div className={"header-section"}>
+                  {/*<img src={itb} alt="logo" width={60} />*/}
+                  {/*<img src={itb2} alt="logo" width={60} />*/}
+                  {/*<img src={itb3} alt="logo" width={60} />*/}
+                  <img src={itb4} alt="logo" width={48} />
+              </div>
+
+              <div className={"header-section "}>An Infamous NFT Collection</div>
+              <div className={"header-section"}>
+                  <img src={itb5} alt="logo" width={48} />
+              </div>
+          </div>
           <img src={logo} className="App-logo" alt="logo" />
 
-          {/*<ThemeProvider theme={theme}>*/}
-          {/*    <ConnectionProvider endpoint={endpoint}>*/}
-          {/*        <WalletProvider wallets={wallets} autoConnect={true}>*/}
-          {/*            <WalletDialogProvider>*/}
-          {/*                <Home*/}
-          {/*                    candyMachineId={candyMachineId}*/}
-          {/*                    config={config}*/}
-          {/*                    connection={connection}*/}
-          {/*                    startDate={startDateSeed}*/}
-          {/*                    treasury={treasury}*/}
-          {/*                    txTimeout={txTimeout}*/}
-          {/*                />*/}
-          {/*            </WalletDialogProvider>*/}
-          {/*        </WalletProvider>*/}
-          {/*    </ConnectionProvider>*/}
-          {/*</ThemeProvider>*/}
+          <ThemeProvider theme={theme}>
+              <ConnectionProvider endpoint={endpoint}>
+                  <WalletProvider wallets={wallets} autoConnect={true}>
+                      <WalletDialogProvider>
+                          <Home
+                              candyMachineId={candyMachineId}
+                              config={config}
+                              connection={connection}
+                              startDate={startDateSeed}
+                              treasury={treasury}
+                              txTimeout={txTimeout}
+                          />
+                      </WalletDialogProvider>
+                  </WalletProvider>
+              </ConnectionProvider>
+          </ThemeProvider>
 
           <div className="container">
 
@@ -158,7 +178,19 @@ const App = () => {
                   </div>
               </div>
 
-              <div>
+              <div className={"row"}>
+                  <div className={"col-12 mb-5"}>
+                      <a href="https://twitter.com/where_is_nunu">
+                          <img src={twitterBlue} className="App-section-header" alt="logo" width={80} />
+                      </a>
+
+                      <a href={"https://discord.gg/Hewj6Beatf"}>
+                          <img src={discordBlue} className="App-section-header" alt="logo" width={80} />
+                      </a>
+                  </div>
+              </div>
+
+              <div className={"mt-2"}>
                   <img src={charlie} className="App-section-header" alt="logo" />
 
                   <RarityType

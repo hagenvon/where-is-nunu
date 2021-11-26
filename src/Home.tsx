@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
-
+import "./Home.css";
+import priceTag from "../src/images/price.png"
 import * as anchor from "@project-serum/anchor";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
@@ -53,10 +54,14 @@ const Home = (props: HomeProps) => {
     severity: undefined,
   });
 
+
+
   const [startDate, setStartDate] = useState(new Date(props.startDate));
 
   const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
+
+  console.log("startdate", startDate)
 
   const refreshCandyMachineState = () => {
     (async () => {
@@ -166,15 +171,36 @@ const Home = (props: HomeProps) => {
     props.connection,
   ]);
 
+  if (!isMinting) {
+    return <div>
+      <Countdown
+          date={startDate}
+          onMount={({ completed }) => completed && setIsActive(true)}
+          onComplete={() => setIsActive(true)}
+          renderer={renderCounter}
+      />
+    </div>
+  }
+
   return (
     <main>
+
+
+
       {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+        <p style={{marginBottom: "35px"}}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL | Mint: {PRICE} SOL</p>}
+      {wallet && <div>Balance: {(balance || 0).toLocaleString()} SOL | Mint: <div style={{position: "relative",
+        display: "inline-block"}}>{PRICE} SOL <img
+          src={priceTag} alt="0.42069" style={{
+            position: "absolute",
+            top: "-26px",
+            width: "101px",
+            left: "-42px",
+      }}/></div> </div>}
 
-      {wallet && <p>Charlies and Bubos available: {itemsRemaining}/{itemsAvailable}</p>}
+      {isMinting && wallet && <p>Charlies and Bubos available: {itemsRemaining}/{itemsAvailable}</p>}
 
       {/*{wallet && <p>Redeemed: {itemsRedeemed}</p>}*/}
 
