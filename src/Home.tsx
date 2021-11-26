@@ -171,17 +171,6 @@ const Home = (props: HomeProps) => {
     props.connection,
   ]);
 
-  if (!isMinting) {
-    return <div>
-      <Countdown
-          date={startDate}
-          onMount={({ completed }) => completed && setIsActive(true)}
-          onComplete={() => setIsActive(true)}
-          renderer={renderCounter}
-      />
-    </div>
-  }
-
   return (
     <main>
 
