@@ -135,22 +135,24 @@ const App = () => {
           </div>
           <img src={logo} className="App-logo" alt="logo" />
 
-          <ThemeProvider theme={theme}>
-              <ConnectionProvider endpoint={endpoint}>
-                  <WalletProvider wallets={wallets} autoConnect={true}>
-                      <WalletDialogProvider>
-                          <Home
-                              candyMachineId={candyMachineId}
-                              config={config}
-                              connection={connection}
-                              startDate={startDateSeed}
-                              treasury={treasury}
-                              txTimeout={txTimeout}
-                          />
-                      </WalletDialogProvider>
-                  </WalletProvider>
-              </ConnectionProvider>
-          </ThemeProvider>
+          {/*<ThemeProvider theme={theme}>*/}
+          {/*    <ConnectionProvider endpoint={endpoint}>*/}
+          {/*        <WalletProvider wallets={wallets} autoConnect={true}>*/}
+          {/*            <WalletDialogProvider>*/}
+          {/*                <Home*/}
+          {/*                    candyMachineId={candyMachineId}*/}
+          {/*                    config={config}*/}
+          {/*                    connection={connection}*/}
+          {/*                    startDate={startDateSeed}*/}
+          {/*                    treasury={treasury}*/}
+          {/*                    txTimeout={txTimeout}*/}
+          {/*                />*/}
+          {/*            </WalletDialogProvider>*/}
+          {/*        </WalletProvider>*/}
+          {/*    </ConnectionProvider>*/}
+          {/*</ThemeProvider>*/}
+
+          <div>Mint paused!</div>
 
           <div className="container">
 
@@ -220,33 +222,33 @@ const App = () => {
               />
 
               <div>
-              <img src={roadmap} className="App-section-header mb-3" alt="logo" />
+              {/*<img src={roadmap} className="App-section-header mb-3" alt="logo" />*/}
 
 
 
-              <div className={"headline"}>Phase 1 - Mint</div>
-              <p>Mint collection</p>
+            {/*  <div className={"headline"}>Phase 1 - Mint</div>*/}
+            {/*  <p>Mint collection</p>*/}
 
-              <div>
-                  <img src={separator} className="App-section-header mb-4" alt="logo" />
-              </div>
-
-
-              <div className={"headline"}>Phase 2 - Reward</div>
-              <p>Reward holders with $FRENS</p>
-              <img src={reward} className="App-section-header" alt="logo" />
-
-            <div>
-                <img src={separator} className="App-section-header mb-3" alt="logo" />
-            </div>
+            {/*  <div>*/}
+            {/*      <img src={separator} className="App-section-header mb-4" alt="logo" />*/}
+            {/*  </div>*/}
 
 
-              <div className={"headline"}>Phase 3 - Mr.Thuggles</div>
-              <p>Release special "Mr.Thuggles" collection exclusively available for $FRENS</p>
-              <img src={breed} className="App-section-header" alt="logo" />
+            {/*  <div className={"headline"}>Phase 2 - Reward</div>*/}
+            {/*  <p>Reward holders with $FRENS</p>*/}
+            {/*  <img src={reward} className="App-section-header" alt="logo" />*/}
 
-              <div className={"headline"}>Phase 4 - Specials</div>
-              <p className={"mb-5"}>Release more specials and/or collections exclusively available for $FRENS</p>
+            {/*<div>*/}
+            {/*    <img src={separator} className="App-section-header mb-3" alt="logo" />*/}
+            {/*</div>*/}
+
+
+              {/*<div className={"headline"}>Phase 3 - Mr.Thuggles</div>*/}
+              {/*<p>Release special "Mr.Thuggles" collection exclusively available for $FRENS</p>*/}
+              {/*<img src={breed} className="App-section-header" alt="logo" />*/}
+
+              {/*<div className={"headline"}>Phase 4 - Specials</div>*/}
+              {/*<p className={"mb-5"}>Release more specials and/or collections exclusively available for $FRENS</p>*/}
               </div>
 
               <img src={rarity} className="App-section-header" alt="logo" />
